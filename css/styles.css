@@ -379,7 +379,7 @@ nav{
 .menu-decoration{
     width: 100%;
     height: 100px;
-    background-image: url('/assets/Images/patron-menu.png');
+    background-image: url(/assets/Images/patron-menu.png);
     background-repeat: repeat;
     background-size: contain; 
     transform: rotate(180deg);     
@@ -394,7 +394,7 @@ nav{
 .frase1{
     height: 160px;
     background-repeat: repeat-x;
-    background-image: url('/assets/Images/frase-1.png');
+    background-image: url(/assets/Images/frase-1.png);
     animation: frase1 10s linear infinite;
 }
 @keyframes frase1 {
@@ -412,7 +412,7 @@ nav{
 }
 .frase3{
     height: 160px;
-    background-image: url('/assets/Images/frase-3.png');
+    background-image: url(/assets/Images/frase-3.png);
     animation: frase3 11s linear infinite;
         
 }
@@ -579,7 +579,7 @@ nav{
 .footer-decoration{
     width: 100%;
     height: 25px;
-    background-image: url('/assets/Images/ondas-footer.png');
+    background-image: url(/assets/Images/ondas-footer.png);
     background-repeat: repeat;
     background-size: contain;
 }
