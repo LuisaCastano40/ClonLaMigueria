@@ -1,0 +1,627 @@
+/*--------------Fuentes a utilizar-------------*/
+@import url('https://fonts.cdnfonts.com/css/zilla-slab');
+@import url('https://fonts.cdnfonts.com/css/lavanderia');
+
+/*-----------------Paleta de colores----------*/
+:root{
+    --colorFondo:#EBE3D6;
+    --colorOscuro:#54351A;
+    --colorClaro:#c59f61;
+}
+
+/*-------------Condiciones iniciales----------*/
+body{
+    background-color: var(--colorFondo);
+    overflow-x: hidden;
+}
+/*-------------------HEADER------------------*/
+
+/*------------------Top Header---------------*/
+.top-header{
+    width: 100vw;
+    height: 20px;
+    background-color: var(--colorClaro);
+    color: var(--colorOscuro);
+    font-family: 'Zilla Slab', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    padding-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.top-header i{
+    margin-right: 5px;
+    font-size: 15px;
+} 
+
+/*----------------Header-container-------------*/
+.Header-container{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+/* main-header */
+.main-header{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    margin-top: 30px;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navBar--Icon{
+    position: relative;
+    margin-left: 200px;
+}
+.navBar--Icon img{
+    width: 50px;
+    height: 50px;
+}
+.navBar--Icon i{
+    color: var(--colorClaro);
+    position: absolute;
+    left: 0;
+    transform: translate(90%,90%);
+    font-size: 20px;
+}
+nav{
+    display: none;
+}
+
+.mainHeader--Logo{
+    display: flex;
+    align-items: center;
+}
+.mainHeader--Logo p{
+    color: var(--colorClaro);
+    font-family: 'Zilla Slab', sans-serif;    
+    font-size: 16px;
+    font-weight: 700;
+    padding: 0px 60px;
+}
+.cesta--Icon{
+    margin-right: 200px;
+}
+
+/* banner */
+.banner{
+    position: absolute;
+    top: 0;
+}
+.banner img{
+    width: 100vw;
+    height: 100vh;
+}
+.banner-Slider{
+    display: flex;
+    animation: slide 50s infinite alternate ease-in-out;
+}
+
+@keyframes slide {
+    0%{transform: translateX(0%);}
+    25%{transform: translateX(-20%);}
+    50%{transform: translateX(-40%);}
+    75%{transform: translateX(-60%);}
+    100%{transform: translateX(-80%);}
+}
+
+.banner .lista {
+    position: absolute;
+    bottom: 0;
+    font-family: 'Zilla Slab', sans-serif; 
+    font-size: 80px;
+    font-weight: 700;
+    margin: 0px 0 100px 160px;
+}
+.lista ul{
+    list-style: none;
+}
+.lista a{
+    color: #FFFF;
+    text-decoration: none;
+    padding: 10px 0;
+}
+.lista a:hover{
+    color: var(--colorClaro);
+}
+
+.banner-decoration{
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-image: url(/assets/Images/patron-banner.png);
+    background-repeat: repeat;
+    background-size: contain;
+}
+
+/*-----------------------MAIN----------------------*/
+
+/*-------------Contenedor introducción-------------*/
+.containerIntro{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+.containerIntro table{
+    width: 70%;
+    height: auto;
+    padding: 50px 0;
+}
+.containerIntro p{
+    color: var(--colorOscuro);
+    font-family: 'Zilla Slab', sans-serif; 
+    font-size: 55px;
+    font-weight: 300;
+    margin: 0;
+}
+.ciclo{
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+.ciclo img{
+    position: absolute;
+    left: 22%;
+    top: 0;
+}
+.ciclo .humo{
+    left: 40%;
+    top:30%
+}
+.ciclo .ciclo{
+    animation: orbit 6s linear infinite;
+}
+@keyframes orbit{
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+/*--------------- Contenido menu ---------------*/
+
+/*Introducción*/
+.containerMenu{
+    width: 100%;
+    height: 230vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top:140px;
+ }
+.menu-bg{
+    width: 100%;
+    height: 90%;
+    background-image: url('/assets/Images/bg-menu.jpg');
+    position: absolute;
+    bottom: 0;
+    z-index: 0;
+}
+.menu-frases{
+    font-family: 'Zilla Slab', sans-serif; 
+    font-size: 200px;
+    font-weight: 700;
+    color: transparent;
+    -webkit-text-stroke:2px;
+    -webkit-text-stroke-color: #FFFFFF;  
+}
+.letraM{
+    position: absolute;
+    top: 0;
+    left: 20%;
+    z-index: 2;
+}
+.letraE{
+    position: absolute;
+    top: 20%;
+    left: 36%;
+    z-index: 2;
+}
+.letraN{
+    position: absolute;
+    top: -6%;
+    right: 37%;
+    z-index: 2;
+}
+.letraU{
+    position: absolute;
+    top: 15%;
+    right: 22%;
+    z-index: 2;
+}
+.menuIntro{
+    width: 70%;
+    height: auto;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+.menuIntro .Img1Menu{
+    width: 100%;
+    height: auto;
+    opacity: 0.5;
+}
+.textMenu{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    position: absolute;
+    top: 15%;
+}
+.textMenu p{
+    color: #FFFF;
+    font-family: 'Zilla Slab', sans-serif; 
+    font-size: 28px;
+    font-weight: 500;
+    margin: 0;
+}
+.textMenu img{
+    margin-top: 25px;
+}
+
+/*Contenido del menú*/
+
+.menuContent{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;   
+}
+.menu{
+    position: relative; 
+    overflow: hidden;
+}
+.menu a{
+    font-family: 'Zilla Slab', sans-serif; 
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    color: #FFFF;
+    text-decoration: none;
+}
+.images{
+    width: 100%;
+    opacity: 0.5; 
+}
+.menuIcons{
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.menuIcons h3{
+    margin: 10px;
+    padding: 0;
+}
+.menu a:hover .menuIcons img, .menu a:hover .menuIcons h3{
+    filter: invert(61%) sepia(85%) saturate(218%) hue-rotate(358deg) brightness(150%) contrast(95%);
+}
+.menu a:hover .images{
+    transform: scale(1.2);
+    transition: 8s ease-out;
+}
+
+/* Menú conócenos */
+.menuConocenos{
+    width: 100%;
+    position: absolute;
+    bottom: 6%;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+}
+.menuConocenos table{
+    width: 70%;
+    height: auto;
+    padding: 20px 0;
+}
+.conocenos1 td{
+    width: 40%;
+}
+.conocenos2 td{
+    width: 60%;
+}
+.conocenos1{
+    padding-left: 20px;
+}
+.conocenos1 h2{
+    margin: 0;
+    margin-bottom: 30px;
+    color: var(--colorClaro);
+    font-family: 'Lavanderia', sans-serif;
+    font-size: 80px; 
+    font-weight: 500;
+    line-height: 100%;
+}
+.conocenos1 p{
+    margin: 0;
+    color: #FFFF;
+    font-family: 'Zilla Slab', sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 150%;
+}
+.link{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 30px;
+}
+.link i{
+    color: var(--colorClaro);
+    font-size: 45px;
+    margin-right: 10px;
+}
+.link a{
+    color: #FFFF;
+    font-family: 'Zilla Slab', sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+}
+.conocenos2 p{
+    color: var(--colorClaro);
+    font-family: 'Zilla Slab', sans-serif;
+    font-size: 96px;
+    font-weight: 700;
+    margin: 0;
+    padding-left: 40px;
+}
+.menu-decoration{
+    width: 100%;
+    height: 100px;
+    background-image: url(/assets/Images/patron-menu.png);
+    background-repeat: repeat;
+    background-size: contain; 
+    transform: rotate(180deg);     
+}
+
+/*--------------------Visítanos-----------------*/
+.containerVisita{
+    width: 100vw;
+    position: relative;
+    margin-top: 80px;
+}
+.frase1{
+    height: 160px;
+    background-repeat: repeat-x;
+    background-image: url(/assets/Images/frase-1.png);
+    animation: frase1 10s linear infinite;
+}
+@keyframes frase1 {
+    0% {background-position: 0 ;}
+    100% {background-position: 1964px;}
+}
+.frase2{
+    height: 125px;
+    background-image: url(/assets/Images/frase-2.png);
+    animation: frase2 15s linear infinite;
+}
+@keyframes frase2 {
+    0% {background-position: 0 0;}
+    100% {background-position: -2588px 0;}
+}
+.frase3{
+    height: 160px;
+    background-image: url(/assets/Images/frase-3.png);
+    animation: frase3 11s linear infinite;
+        
+}
+@keyframes frase3 {
+    0% {background-position: 0 0;}
+    100% {background-position: 3082px 0;}
+}
+.containerVisita-title{
+    width: 100%;
+    position: absolute;
+    top: 35%;
+    display: flex;
+    justify-content: right;
+}
+.containerVisita-title h2{
+    color: var(--colorClaro);
+    font-family: 'Lavanderia', sans-serif;
+    font-size: 80px; 
+    font-weight: 500;
+    margin: 0;
+    padding: 0 15px;
+    position: absolute;
+    bottom: -4%;
+    left: 10%;
+}
+.containerVisita-title img{
+    width: 55%;
+    margin: 0 10%;
+}
+.containerVisita-content{
+    display: flex;
+    justify-content: center;
+}
+.content-content{
+    width: 70%;
+    height: auto;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 25px;
+    margin: 15% 0 160px 0;
+    padding: 0;
+}
+.content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid var(--colorOscuro);
+    gap: 5px;
+    margin: 0;
+    padding: 0;
+}
+.content h3{
+    font-family: 'Zilla Slab', sans-serif;
+    font-size: 19px;
+    font-weight: 100;
+    color: var(--colorOscuro);
+}
+.content i{
+    font-size: 25px;
+    color: var(--colorOscuro);
+} 
+
+/*-------------formulario escríbenos----------*/
+.formEscribenos{
+    display: flex;
+    justify-content: center;
+}
+.formulario{
+    width: 72%;
+    height: auto;
+    margin: 0 0 80px 0;
+}
+.titulos{
+    text-align: center;
+    line-height: 100px;
+    padding: 10PX 0;
+}
+.titulos h2{
+    font-family: 'Zilla Slab', sans-serif; 
+    font-size: 180px;
+    font-weight: 700;
+    color: transparent;
+    -webkit-text-stroke:3px;
+    -webkit-text-stroke-color: #FFFFFF; 
+    margin: 0;
+}
+.titulos h3{
+    color: var(--colorClaro);
+    font-family: 'Lavanderia', sans-serif;
+    font-size: 100px; 
+    font-weight: 500;
+    margin: 0;
+}
+.escribenosf{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Zilla Slab', sans-serif;
+    font-size: 16px;
+    color: #b7ada3;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.info input{
+    width: 98%;
+    height: 40px;
+    margin-bottom: 25px;
+    background-color: var(--colorFondo); 
+    border: none;
+    border-bottom: 2px solid #b7ada3;
+    background: none;
+}
+.info textarea{
+    width: 98%;
+    height: 70px;
+    margin: 25px 0;
+    border: none;
+    border-bottom: 2px solid #b7ada3;
+    background: none;
+}
+.info input:focus, .info textarea:focus{
+    outline: none;
+}
+.politics{
+    width: 98%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    gap: 5px;
+}
+.politics a{
+    text-decoration: none;
+}
+.politics a p{
+    color: var(--colorOscuro);
+    font-family: 'Zilla Slab', sans-serif;
+    font-size: 14px;  
+}
+.btn{
+    background: none;
+    padding: 12px 50px 12px 50px;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: var(--colorClaro);
+    margin-top: 10px;
+    border-radius: 50px;
+    border: 2px solid var(--colorClaro);
+    transition: all 0.2s ease-out;
+    font-family: 'Zilla Slab', sans-serif;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: var(--colorClaro);
+    color: #FFFFFF;
+}
+
+/*-------------------FOOTER------------------*/
+.footer-decoration{
+    width: 100%;
+    height: 25px;
+    background-image: url(/assets/Images/ondas-footer.png);
+    background-repeat: repeat;
+    background-size: contain;
+}
+.footerContent{
+    width: 100vw;
+    padding: 30px 0;
+    background-color: var(--colorOscuro);
+    color: #FFFF;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 80px;
+}
+.llamanos h3, .escribenos h3, .copy h3{
+    font-family: 'Zilla Slab', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    border-bottom: 1px solid #FFFF;
+    padding: 8px 20px;
+    margin: 0;
+}
+.llamanos p, .escribenos p, .copy p{
+    font-family: 'Zilla Slab', sans-serif;
+    font-size: 18px;
+    font-weight: 100;
+    margin: 0;
+    padding: 10px 0;  
+}
+.footerPolitics{
+    width: 100%;
+    height: 34px;
+    background-color: var(--colorClaro);
+    font-family: 'Zilla Slab', sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footerPolitics a{
+    color: var(--colorOscuro);
+    text-decoration: none;
+}
