@@ -143,6 +143,14 @@ nav{
     background-size: contain;
 }
 
+.audio{
+    position: fixed;
+    bottom: 10%;
+    right: 5%;
+    opacity: 1;
+    z-index: 100;
+}
+
 /*-----------------------MAIN----------------------*/
 
 /*-------------Contenedor introducción-------------*/
@@ -438,8 +446,9 @@ nav{
     bottom: -4%;
     left: 10%;
 }
-.containerVisita-title img{
+.containerVisita-title iframe{
     width: 55%;
+    height: 450px;
     margin: 0 10%;
 }
 .containerVisita-content{
